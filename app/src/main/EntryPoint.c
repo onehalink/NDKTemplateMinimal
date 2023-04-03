@@ -99,7 +99,7 @@ static void OnContentRectChanged(ANativeActivity* activity, const ARect* rect)
     LOGD("Function [%s] had been invoked", __FUNCTION__ );
 }
 
-static void OnConfigurationChanged(ANativeActivity* activity, const ARect* rect)
+static void OnConfigurationChanged(ANativeActivity* activity)
 {
     LOGD("Function [%s] had been invoked", __FUNCTION__ );
 }
@@ -111,7 +111,7 @@ static void OnLowMemory(ANativeActivity* activity)
 
 
 // Similar as "main"
-void ANativeActivity_onCreate(ANativeActivity* activity, void* SavedInstanceState, size_t savedInstanceStateSize)
+void ANativeActivity_onCreate(ANativeActivity* activity, void* savedInstanceState, size_t savedInstanceStateSize)
 {
     LOGD("Startup");
 
